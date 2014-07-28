@@ -1,0 +1,16 @@
+<ion-view title="Attendee Directory">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+
+        <a class="item item-avatar" href="#/app/directory" ng-repeat="attendee in attendees">
+          <img src="{{attendee.img}}">
+          <h2>{{attendee.firstname}} {{attendee.lastname}}</h2>
+          <p>{{attendee.title}}</p>
+        </a>
+        
+    </ion-list>
+  </ion-content>
+</ion-view>
